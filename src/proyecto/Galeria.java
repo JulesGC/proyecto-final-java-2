@@ -17,28 +17,28 @@ public class Galeria {
     public Galeria(){
             imagenes=new ArrayList<imagensita>() ;
             imagensita i1=new imagensita();
-            i1.setUrl("/proyecto/voidz.png");
+            i1.setUrl("/Proyecto/voidz.png");
             i1.setTitulo("chavas guapas");
             i1.setDescripcion("Portada promocional de playeras");
             
           
             imagensita i2=new imagensita();
-            i2.setUrl("/proyecto/ana.png");
+            i2.setUrl("/Proyecto/ana.png");
             i2.setTitulo("Anna Prior");
             i2.setDescripcion("Baterista de la banda Metronomy");
             
             imagensita i3=new imagensita();
-            i3.setUrl("/proyecto/love.png");
+            i3.setUrl("/Proyecto/love.png");
             i3.setTitulo("Love Letters");
             i3.setDescripcion("Tercer album de la banda Metronomy");
             
             imagensita i4=new imagensita();
-            i4.setUrl("/proyecto/metronomy.png");
+            i4.setUrl("/Proyecto/metronomy.png");
             i4.setTitulo("The English Riviera");
             i4.setDescripcion("Segundo Album de estudio de la vbanda Metronomy");
             
             imagensita i5=new imagensita();
-            i5.setUrl("/proyecto/met.png");
+            i5.setUrl("/Proyecto/met.png");
             i5.setTitulo("");
             i5.setDescripcion(".......");
             
