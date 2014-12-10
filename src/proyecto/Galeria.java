@@ -17,30 +17,30 @@ public class Galeria {
     public Galeria(){
             imagenes=new ArrayList<imagensita>() ;
             imagensita i1=new imagensita();
-            i1.setUrl("/Proyecto/voidz.png");
-            i1.setTitulo("chavas guapas");
-            i1.setDescripcion("Portada promocional de playeras");
+            i1.setUrl("/Proyecto/imagen1.png");
+            i1.setTitulo("METRONOMY");
+            i1.setDescripcion("Portada del album The english riviera 2008");
             
           
             imagensita i2=new imagensita();
-            i2.setUrl("/Proyecto/ana.png");
-            i2.setTitulo("Anna Prior");
-            i2.setDescripcion("Baterista de la banda Metronomy");
+            i2.setUrl("/Proyecto/imagen2.png");
+            i2.setTitulo("METRONOMY");
+            i2.setDescripcion("Portada del album Love letters del Año 2014");
             
             imagensita i3=new imagensita();
-            i3.setUrl("/Proyecto/love.png");
-            i3.setTitulo("Love Letters");
-            i3.setDescripcion("Tercer album de la banda Metronomy");
+            i3.setUrl("/Proyecto/imagen3.png");
+            i3.setTitulo("THE STROKES");
+            i3.setDescripcion("Portada del album Comedown Machine");
             
             imagensita i4=new imagensita();
-            i4.setUrl("/Proyecto/metronomy.png");
-            i4.setTitulo("The English Riviera");
-            i4.setDescripcion("Segundo Album de estudio de la vbanda Metronomy");
+            i4.setUrl("/Proyecto/imagen4.png");
+            i4.setTitulo("DEVENDRA BANHART");
+            i4.setDescripcion("Portada del album 'MALA´");
             
             imagensita i5=new imagensita();
-            i5.setUrl("/Proyecto/met.png");
-            i5.setTitulo("");
-            i5.setDescripcion(".......");
+            i5.setUrl("/Proyecto/imagen5.png");
+            i5.setTitulo("BLACK KIDS");
+            i5.setDescripcion("Portada del album 'PARTIE TRAUMATIC´");
             
             //agreagar al array
             
