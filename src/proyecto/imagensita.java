@@ -5,11 +5,13 @@
  */
 package proyecto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author T107
  */
-public class imagensita {
+public class imagensita implements Serializable {
     
    private String titulo;
    private String url;
