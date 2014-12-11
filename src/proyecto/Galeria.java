@@ -17,28 +17,28 @@ public class Galeria {
     public Galeria(){
             imagenes=new ArrayList<imagensita>() ;
             imagensita i1=new imagensita();
-            i1.setUrl("/Proyecto/imagen1.png");
+            i1.setUrl("C:\\Users\\T\\Documents\\NetBeansProjects\\proyecto-final-java-2\\src\\proyecto\\imagen1.png");
             i1.setTitulo("METRONOMY");
             i1.setDescripcion("Portada del album The english riviera 2008");
             
           
             imagensita i2=new imagensita();
-            i2.setUrl("/Proyecto/imagen2.png");
+            i2.setUrl("C:\\Users\\T\\Documents\\NetBeansProjects\\proyecto-final-java-2\\src\\proyecto\\imagen2.png");
             i2.setTitulo("METRONOMY");
             i2.setDescripcion("Portada del album Love letters del Año 2014");
             
             imagensita i3=new imagensita();
-            i3.setUrl("/Proyecto/imagen3.png");
+            i3.setUrl("C:\\Users\\T\\Documents\\NetBeansProjects\\proyecto-final-java-2\\src\\proyecto\\imagen3.png");
             i3.setTitulo("THE STROKES");
             i3.setDescripcion("Portada del album Comedown Machine");
             
             imagensita i4=new imagensita();
-            i4.setUrl("/Proyecto/imagen4.png");
+            i4.setUrl("C:\\Users\\T\\Documents\\NetBeansProjects\\proyecto-final-java-2\\src\\proyecto\\imagen4.png");
             i4.setTitulo("DEVENDRA BANHART");
             i4.setDescripcion("Portada del album 'MALA´");
             
             imagensita i5=new imagensita();
-            i5.setUrl("/Proyecto/imagen5.png");
+            i5.setUrl("C:\\Users\\T\\Documents\\NetBeansProjects\\proyecto-final-java-2\\src\\proyecto\\imagen5.png");
             i5.setTitulo("BLACK KIDS");
             i5.setDescripcion("Portada del album 'PARTIE TRAUMATIC´");
             

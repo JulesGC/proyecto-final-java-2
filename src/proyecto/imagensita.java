@@ -49,6 +49,9 @@ public class imagensita implements Serializable {
     public void setUrl(String url) {
         this.url = url;
     }
-   
-    
+
+    @Override
+    public String toString() {
+        return "imagensita{" + "titulo=" + titulo + ", url=" + url + ", descripcion=" + descripcion + '}';
+    }
 }

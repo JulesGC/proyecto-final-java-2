@@ -9,15 +9,16 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 
 public class Carrusel extends javax.swing.JFrame {
 
-   Galeria g;
+   Galeria g = new Galeria();
     public Carrusel() {
-       g=new Galeria();
         initComponents();
         Thread t1=new Thread(new Runnable(){
 
@@ -27,9 +28,14 @@ public class Carrusel extends javax.swing.JFrame {
                 int i=0;
                   
               while(true){
-                  if(i>=5)i=0;
+                  if(i>=g.LeerTodas().size())i=0;
+                  
                   jLabel1.setText(g.LeerTodas().get(i).getTitulo());
-                  jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource(g.LeerTodas().get(i).getUrl())));
+                  System.out.println(g.LeerTodas().get(i).getUrl());
+                  ImageIcon icon = new ImageIcon(g.LeerTodas().get(i).getUrl());
+                  jLabel2.setIcon(icon);
+                  //jLabel2.setIcon(new javax.swing.ImageIcon("F:\\DM DW\\ana.png"));
+                  //jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource(g.LeerTodas().get(i).getUrl())));
                   jTextField1.setText(g.LeerTodas().get(i).getDescripcion());
                   try {
                       Thread.sleep(3000);
@@ -139,7 +145,19 @@ public class Carrusel extends javax.swing.JFrame {
             // TODO add your handling code here:
             JFileChooser choser=new JFileChooser();
            choser.showOpenDialog(this);
-        File f=   choser.getSelectedFile();
+            File f=   choser.getSelectedFile();
+            String archivo = f.getAbsolutePath().replace("\\", "\\\\");
+            try {
+                imagensita img = new imagensita("titulo",archivo , "descripcion");
+                //System.out.println("img: "+img);
+                
+                ArrayList<imagensita> lista = g.LeerTodas();
+                lista.add(img);
+                g.setImagenes(lista);
+                //System.err.println("lista"+g.LeerTodas());
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
+            }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
